@@ -19,10 +19,14 @@ Then instantiate and use the object like this:
 
 ### aci_monitor.py ###
 A specific ACI class object for creating and using subscriptions.  Import into a project like this:
+```
 	from aci_monitor import ACI_Monitor
+```
 Then instantiate and use the object like this:
+```
 	monitor = ACI_Monitor(“sandbox-aci.rtp.lab”, “myuser”, “MyPwd!”)
 	mon.subscribe(“tenant”, “fvTenant”, target=”subtree”)
+```
 
 ### aci_to_ucsm_vlan_mapping.py ###
 A script that will: 
@@ -40,12 +44,15 @@ This is a demo of the aci_monitor object to prove the aci subscription works.  T
 
 ### ucsm.py ###
 This is a UCS Manager class object that leverages the UCSM SDK to interact with UCS.  Import into a project like this:
+```
 	from ucsm import UCSM
+```
 then instantiate and use the object like this:
+```
 	ucs3 = UCSM(“rtp-ucsm-03.rtp.lab”, “myusername”, “mypassword!”)
 	ucs3.query_classid(“NetworkElement”)
 	ucs3.create_vlan_group(“MyVlanGroup”)
-
+```
 
 
 
