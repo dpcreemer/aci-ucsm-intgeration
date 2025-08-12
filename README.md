@@ -7,11 +7,15 @@ The files in this Repo:
 
 ### aci.py ###
 An ACI class object that can be used to interact with an ACI fabric.  Import into a project like this:
-from aci import ACI
+```
+	from aci import ACI
+```
 Then instantiate and use the object like this:
+```
 	sandbox = ACI(“sandbox-aci.rtp.lab”, “myusername”, “MyPassword!”)
 	sandbox.get(“uni/tn-demo”)
 	sandbox.get(“fvTenant”)
+```
 
 ### aci_monitor.py ###
 A specific ACI class object for creating and using subscriptions.  Import into a project like this:
